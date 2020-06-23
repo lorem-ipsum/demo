@@ -1,5 +1,4 @@
 import React from 'react'
-
 import { Result, Button, Typography } from 'antd'
 import { CloseCircleOutlined } from '@ant-design/icons'
 
@@ -7,13 +6,11 @@ import 'antd/dist/antd.css'
 
 const { Paragraph, Text } = Typography
 
-
-
-function App() {
+const Home = () => {
   return (
     <Result
-      status="error"
-      title="Submission Failed"
+      status="success"
+      title="This is Home Page"
       subTitle="Please check and modify the following information before resubmitting."
       extra={[
         <Button type="primary" key="console">
@@ -35,15 +32,15 @@ function App() {
         </Paragraph>
         <Paragraph>
           <CloseCircleOutlined className="site-result-demo-error-icon" /> Your account has been
-        frozen. <a href="https://lorem-ipsum.github.io/">Thaw immediately &gt;</a>
+        frozen. <a href="#/" disabled>Go home</a>
         </Paragraph>
         <Paragraph>
           <CloseCircleOutlined className="site-result-demo-error-icon" /> Your account is not yet
-        eligible to apply. <a href="https://lorem-ipsum.github.io/">Apply Unlock &gt;</a>
+        eligible to apply. <a href="#/detail">Go to details</a>
         </Paragraph>
       </div>
     </Result>
   );
 }
 
-export default App
+export default Home
