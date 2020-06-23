@@ -35,11 +35,11 @@ function App() {
         </Paragraph>
         <Paragraph>
           <CloseCircleOutlined className="site-result-demo-error-icon" /> Your account has been
-        frozen. <a>Thaw immediately &gt;</a>
+        frozen. <a href="https://lorem-ipsum.github.io/">Thaw immediately &gt;</a>
         </Paragraph>
         <Paragraph>
           <CloseCircleOutlined className="site-result-demo-error-icon" /> Your account is not yet
-        eligible to apply. <a>Apply Unlock &gt;</a>
+        eligible to apply. <a href="https://lorem-ipsum.github.io/">Apply Unlock &gt;</a>
         </Paragraph>
       </div>
     </Result>
